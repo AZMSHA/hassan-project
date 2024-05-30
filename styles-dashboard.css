@@ -92,7 +92,7 @@ body {
   grid-template-columns: [page-start] 16rem [sidebar] 1fr [page-end];
   accent-color: rgb(var(--color-ter));
   caret-color: rgb(var(--color-ter));
-  padding-top: 72px;
+  padding-top: 4.5rem;
 }
 
 nav.top-navbar {
@@ -133,7 +133,7 @@ main h1 {
 
 nav.sidebar {
   position: fixed;
-  top: 72px;
+  top: 4.5rem;
   bottom: 0px;
   grid-column: page-start / sidebar;
   width: 16rem;
@@ -291,6 +291,12 @@ main #medium-links {
 @media (max-width: 800px) {
   .main-links {
     grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 8px;
   }
 }
 

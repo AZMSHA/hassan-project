@@ -175,3 +175,26 @@ label {
 .row {
   flex-direction: row;
 }
+
+@media (max-width: 450px) {
+  body main {
+    position: absolute;
+    inset: 0px;
+    width: initial;
+    max-width: initial;
+    padding: 1rem;
+  }
+
+  input:not([type="button"]):not([type="submit"]):not([type="radio"]):not(
+      [type="checkbox"]
+    ),
+  select {
+    max-width: initial;
+  }
+}
+
+@media (max-width: 280px) {
+  :root {
+    font-size: 8px;
+  }
+}
